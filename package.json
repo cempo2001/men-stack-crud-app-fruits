@@ -1,0 +1,29 @@
+{
+  "name": "men-stack-crud-app-fruits",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/cempo2001/men-stack-crud-app-fruits#readme",
+  "bugs": {
+    "url": "https://github.com/cempo2001/men-stack-crud-app-fruits/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cempo2001/men-stack-crud-app-fruits.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.8",
+    "ejs": "^7.0.1",
+    "express": "^5.3.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^9.11.2",
+    "morgan": "^1.12.1"
+  }
+}
