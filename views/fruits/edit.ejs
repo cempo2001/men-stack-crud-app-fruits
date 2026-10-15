@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit <%= fruit.name %></title>
+  </head>
+  <body>
+    <h1>Edit <%= fruit.name %></h1>
+
+    <!-- Mora pisati tačno ?_method=PUT (velika slova) -->
+    <form action="/fruits/<%= fruit._id %>?_method=PUT" method="POST">
+      <label for="name">Name:</label>
+      <!-- value predpopunjava ime -->
+      <input type="text" name="name" id="name" value="<%= fruit.name %>" />
+
+      <label for="isReadyToEat">Ready to Eat?</label>
+      <!-- checked se dodaje samo ako je voće spremno za jelo -->
+      <input
+        type="checkbox"
+        name="isReadyToEat"
+        id="isReadyToEat"
+        <% if (fruit.isReadyToEat) { %>checked<% } %>
+      />
+
+      <button type="submit">Update Fruit</button>
+    </form>
+
+    <a href="/fruits">Back to Fruits</a>
+  </body>
+</html>
